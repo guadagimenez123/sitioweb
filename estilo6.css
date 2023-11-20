@@ -1,0 +1,83 @@
+.Alinear_Flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.img11{
+	width: 500px;
+	height: auto;
+} 
+.img12{
+	width: 500px;
+	height: auto;
+}
+.carrusel{
+	width: 800px;
+	height: auto;
+	margin: 50px auto 0;
+}
+
+h1{ font-size: 40px;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	text-align: center;
+	background-color:black ;
+	color: white;
+
+}
+h2{ font-size: 25px;
+	font-style: italic;
+	font-weight: bold;
+	background-color:black ;
+	color: white;
+
+}
+p{ font-size: 18px;
+
+}
+.boton1{
+	background: black;
+	cursor: pointer;
+	border: none;
+	padding: 3px 15px;
+	color: azure;
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
+	margin: 10px;
+
+}
+
+.boton1:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+	border-radius: 12px;
+	background-size: 800%;
+	filter: blur(8px);
+	animation: glow 20s linear infinite
+}
+
+@keyframes glow{
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		 background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+a{
+	color: white;
+}
